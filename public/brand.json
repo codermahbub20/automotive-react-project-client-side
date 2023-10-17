@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Toyota",
+        "photo": "https://demo.vehica.com/wp-content/uploads/2020/02/1-42-1024x683.jpg",
+	"description": "Japanese automaker known for reliability, quality, and innovation in vehicles."
+    },
+    {
+        "Name": "Ford",
+        "photo": "https://coolmaterial.com/wp-content/uploads/2020/07/Ford-Performance-x-RTR-Mustang-Mach-E-1400-Prototype-1000x600.jpg",
+	"description": "American automaker famous for its history and diverse vehicle lineup."    
+    },
+    {
+       "Name": "BMW",
+        "photo": "https://www.hdcarwallpapers.com/download/bmw_m4_custom_cgi_4k-3840x2160.jpg",
+	"description": "German automaker renowned for luxury and iconic Ultimate Machine."  
+    },
+    {
+          "Name": "Mercedes-Benz",
+        "photo": "https://static.reuters.com/resources/r/?m=02&d=20200902&t=2&i=1531940727&r=LYNXMPEG811C1&w=800",
+	"description": "Mercedes-Benz: German luxury, precision engineering, and innovation in vehicle." 
+    },
+    {
+        "Name": " Tesla",
+        "photo": "https://www.hdcarwallpapers.com/walls/tesla_roadster_sports_car-wide.jpg",
+	"description": "Tesla: American electric vehicle and clean energy company founded by Elon Musk." 
+    },
+    {
+          "Name": "Honda",
+        "photo": "https://www.autodeal.com.ph/custom/blog-post/header/5785e0a1ee679.jpg",
+	"description": "Honda: Japanese automaker recognized for reliable, and affordable vehicles.."
+    }
+]

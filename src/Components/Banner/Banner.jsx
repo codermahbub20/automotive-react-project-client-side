@@ -3,7 +3,7 @@ import slide3 from '../../assets/Slider/qqq.jpg'
 
 const Banner = () => {
     return (
-        <div className='max-h-[90vh]'>
+        <div >
             <div className="hero min-h-screen" style={{ backgroundImage: `url(${slide3})` }}>
                 <div className="hero-overlay bg-opacity-10"></div>
                 <div className="hero-content text-center text-neutral-content">

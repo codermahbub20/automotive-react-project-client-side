@@ -3,6 +3,7 @@ import Footer from "../Shared/Footer/Footer";
 import NavBar from "../Shared/Navbar/NavBar";
 
 
+
 const MainLayOut = () => {
     return (
         <div>
