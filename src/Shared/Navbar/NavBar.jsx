@@ -9,7 +9,7 @@ const NavBar = () => {
         <li><NavLink to="/addproduct">Add Product</NavLink></li>
         <li><NavLink to="/updateproduct">Update Product</NavLink></li>
         <li><NavLink to="/applied">Add Cart</NavLink></li>
-        <li><NavLink to="/blogs">Login</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
     </>
 
     return (
