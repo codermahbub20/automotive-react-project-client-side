@@ -10,6 +10,7 @@ const NavBar = () => {
         <li><NavLink to="/updateproduct">Update Product</NavLink></li>
         <li><NavLink to="/applied">Add Cart</NavLink></li>
         <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/registration">Registration</NavLink></li>
     </>
 
     return (

@@ -11,6 +11,7 @@ import Home from './Components/Home/Home';
 import AddProduct from './Components/AddProduct/AddProduct';
 import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
 import Login from './Components/Login/Login';
+import Registration from './Components/Registration/Registration';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>
+      },
+      {
+        path: "/registration",
+        element: <Registration></Registration>
       }
       
     ]
