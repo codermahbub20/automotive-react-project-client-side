@@ -9,6 +9,7 @@ import {
 import MainLayOut from './MainLayOut/MainLayOut.jsx';
 import Home from './Components/Home/Home';
 import AddProduct from './Components/AddProduct/AddProduct';
+import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/addproduct",
         element: <AddProduct></AddProduct>
+      },
+      {
+        path: "/updateproduct",
+        element: <UpdateProduct></UpdateProduct>
       }
       
     ]

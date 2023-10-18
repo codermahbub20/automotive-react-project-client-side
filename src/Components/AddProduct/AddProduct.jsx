@@ -21,7 +21,7 @@ const AddProduct = () => {
     return (
         <div>
             <div>
-                <div className='min-h-screen' style={{ backgroundImage: `url()` }}>
+                <div className='min-h-screen' style={{ backgroundImage: `url(https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2018/04/foo-1.png)` }}>
                     <div className='w-3/4 mx-auto'>
                         
                         <div className='bg-[#F4F3F0] p-10 space-y-4'>
@@ -49,7 +49,7 @@ const AddProduct = () => {
                                 <div className='md:flex md:px-24'>
                                     <div className="form-control md:w-1/2">
                                         <label className="label">
-                                            <span className="label-text   text-xl">Enter Product Type</span>
+                                            <span className="label-text   text-xl">Product Type</span>
                                         </label>
                                         <input type="text" placeholder="Enter coffee supplier" className="input input-bordered" name='type' required />
 
@@ -64,7 +64,7 @@ const AddProduct = () => {
                                 <div className='md:flex md:px-24'>
                                     <div className="form-control md:w-1/2">
                                         <label className="label">
-                                            <span className="label-text   text-xl">Short Description</span>
+                                            <span className="label-text   text-xl">Description</span>
                                         </label>
                                         <input type="text" placeholder="Enter Short description" className="input input-bordered" name='description' required />
 

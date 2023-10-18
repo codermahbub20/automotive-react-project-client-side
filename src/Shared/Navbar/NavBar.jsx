@@ -7,6 +7,7 @@ const NavBar = () => {
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addproduct">Add Product</NavLink></li>
+        <li><NavLink to="/updateproduct">Update Product</NavLink></li>
         <li><NavLink to="/applied">Add Cart</NavLink></li>
         <li><NavLink to="/blogs">Login</NavLink></li>
     </>
@@ -22,7 +23,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <img className="w-32 h-10" src="https://demo.vehica.com/wp-content/uploads/2021/09/vehica-logo-white-retina.png" alt="" />
+                <img className="w-32 h-10" src="https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2018/04/logo-1.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
