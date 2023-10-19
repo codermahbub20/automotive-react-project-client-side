@@ -1,9 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+import { FcGoogle } from "react-icons/fc";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../Firebase/firebase.config";
+const auth = getAuth(app)
 
 const Login = () => {
-
+    const provider = new GoogleAuthProvider();
     const {logIn} = useContext(AuthContext)
 
     const handleLogIn = e =>{
@@ -19,10 +22,18 @@ const Login = () => {
         .catch(error =>{
             console.log(error)
         })
-
-
-
         console.log(email,password)
+    }
+
+    const handleGoogleLogin = () =>{
+        signInWithPopup(auth,provider)
+        .then(result =>{
+            const user = result.user;
+            console.log(user)
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
 
     return (
@@ -46,6 +57,9 @@ const Login = () => {
                         <input type="password" placeholder="password" className="input input-bordered" name="password" required />
                         <label className="label">
                             <a href="#" className="label-text-alt md:text-2xl font-neon link link-hover">Forgot password?</a>
+                            <div className="flex">
+                            <button onClick={handleGoogleLogin} className="btn  text-xl"><FcGoogle className="h-10 w-6"></FcGoogle>Google</button>
+                            </div>
                         </label>
                     </div>
                     <div className="form-control mt-6">

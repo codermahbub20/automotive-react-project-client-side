@@ -86,10 +86,7 @@ const UpdateProduct = () => {
                                     <div className="form-control md:px-24  w-full">
                                         <input className='btn mt-3 w-full mx-auto  hover:bg-[#56c5bb] bg-[#56c5bb]' type="submit" value="Update Product" />
                                     </div>
-
                                 </form>
-
-
 
                             </div>
                         </div>
