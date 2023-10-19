@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-
+// zhgNBjQxnBJ69fRJ
 
 const Registration = () => {
 
-    const {createUser} = useContext(AuthContext)
+    const { createUser } = useContext(AuthContext)
 
     const handleRegistration = e => {
         e.preventDefault();
@@ -13,13 +13,26 @@ const Registration = () => {
         const email = form.email.value;
         const password = form.password.value;
 
-        createUser(email,password)
-        .then(result =>{
-            console.log(result)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+        createUser(email, password)
+            .then(result => {
+                console.log(result)
+                const user = {  email,name }
+
+                fetch("http://localhost:5000/user", {
+                    method: "POST",
+                    headers: {
+                        'content-types': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                    })
+            })
+            .catch(error => {
+                console.log(error)
+            })
 
         console.log(name, email, password)
     }
