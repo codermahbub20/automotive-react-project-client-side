@@ -16,6 +16,8 @@ const UpdateProduct = () => {
         const product = { name, brand, type, price, description, rating, photo }
 
         console.log(product)
+
+        
     }
 
     return (

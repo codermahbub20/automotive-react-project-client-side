@@ -13,11 +13,14 @@ import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
 import Login from './Components/Login/Login';
 import Registration from './Components/Registration/Registration';
 import AuthProvider from './Providers/AuthProvider';
+import Details from './Components/details/Details';
+import ErrorPage from './Shared/Footer/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayOut></MainLayOut>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -29,7 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateproduct",
-        element: <UpdateProduct></UpdateProduct>
+        element: <UpdateProduct></UpdateProduct>,
+        // loader: ({params}) => fetch(`brand.json/${params.brand}`)
       },
       {
         path: "/login",
@@ -38,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>
+      },
+      {
+        path : "/details/:brand",
+        element: <Details></Details>,
+        loader: ({params}) => fetch(`brand.json/${params.brand}`)
       }
 
     ]

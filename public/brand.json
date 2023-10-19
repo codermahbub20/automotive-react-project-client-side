@@ -1,26 +1,26 @@
 [
     {
-        "Name": "Audi",
+        "brand": "Audi",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/8.png"
     },
     {
-        "Name": "Alfa Romeo",
+        "brand": "Alfa Romeo",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/11.png"    
     },
     {
-       "Name": "BMW",
+       "brand": "BMW",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/logobmw.png" 
     },
     {
-          "Name": "Ferrari",
+          "brand": "Ferrari",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/emblem_128.png" 
     },
     {
-        "Name": "Ford",
+        "brand": "Ford",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/15.png" 
     },
     {
-          "Name": "Honda",
+          "brand": "Honda",
         "photo": "https://carspot.scriptsbundle.com/transparent-sidbar/wp-content/uploads/sites/29/2017/07/honda.png"
     }
 ]
