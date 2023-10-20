@@ -1,15 +1,17 @@
 // import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData} from "react-router-dom";
 import slider1 from '../../assets/Slider/qqq.jpg'
 import slider2 from '../../assets/Slider/mclaren-p1.jpg'
 import slider3 from '../../assets/Slider/audi-r8.jpg'
+import SubProduct from "../SubProduct/SubProduct";
 
 
 
 const Details = () => {
 
-    const brand = useParams()
+    const brand = useLoaderData()
     console.log(brand)
+
 
     return (
         <div>
@@ -42,6 +44,12 @@ const Details = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 md:w-3/4   md:gap-5  mx-auto">
+                {
+                    brand.length > 0 ? brand?.map((item,index)=><SubProduct key={index} item={item}></SubProduct>) : <div className="md:h-[350px]  w-full"><p className="md:text-6xl font-neon text-center">New Product Are Coming soon ....</p></div>
+                }
             </div>
         </div>
     );
