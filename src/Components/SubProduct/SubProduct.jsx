@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const SubProduct = ({ item }) => {
-    const { name, photo,brand,type,price,rating } = item;
+    const { name, photo,brand,type,price,rating,_id } = item;
     return (
         <div className="mb-4 mt-5">
             <div className="card text-xl  lg:w-[350px] font-neon font-medium text-center  bg-base-300 shadow-xl">
@@ -13,13 +14,16 @@ const SubProduct = ({ item }) => {
                     <p>Price: {price}</p>
                     <p>Ratings: {rating}</p>
                     <div className="card-actions justify-center">
-                        <button className="btn btn-accent">Details</button>
-                        <button className="btn btn-accent">Update</button>
+                        
+                        <Link to={`/productDetails/${_id}`}><button className="btn btn-accent">Details</button></Link>
+
+                        <Link to={`/updateproduct/${_id}`}><button className="btn btn-accent">Update</button></Link>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+// /productDetails/:id
 
 export default SubProduct;

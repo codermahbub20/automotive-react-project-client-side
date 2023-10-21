@@ -9,7 +9,6 @@ const NavBar = () => {
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addproduct">Add Product</NavLink></li>
-        <li><NavLink to="/updateproduct">Update Product</NavLink></li>
         <li><NavLink to="/applied">Add Cart</NavLink></li>
         <li><NavLink to="/login">Login</NavLink></li>
         <li><NavLink to="/registration">Registration</NavLink></li>
@@ -44,6 +43,7 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
+                    <p className="text-red-400 p-1">{user.email}</p>
                     <img className="rounded-full w-14 mr-4" src={user.photoURL} alt="" />
                         <button onClick={handleLogout} className="btn  bg-black btn-accent text-white">Log Out</button>
                     </>

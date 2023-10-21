@@ -15,6 +15,7 @@ import Registration from './Components/Registration/Registration';
 import AuthProvider from './Providers/AuthProvider';
 import Details from './Components/details/Details';
 import ErrorPage from './Shared/Footer/ErrorPage/ErrorPage';
+import ProductDetails from './Components/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -31,9 +32,9 @@ const router = createBrowserRouter([
         element: <AddProduct></AddProduct>
       },
       {
-        path: "/updateproduct",
+        path: "/updateproduct/:id",
         element: <UpdateProduct></UpdateProduct>,
-        // loader: ({params}) => fetch(`brand.json/${params.brand}`)
+        loader: ({params}) => fetch(`http://localhost:5000/productById/${params.id}`)
       },
       {
         path: "/login",
@@ -46,8 +47,13 @@ const router = createBrowserRouter([
       {
         path : "/details/:brand",
         element: <Details></Details>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.brand}`),
+        loader: ({params}) => fetch(`http://localhost:5000/productByBrand/${params.brand}`),
 
+      },
+      {
+        path: "/productDetails/:id",
+        element: <ProductDetails></ProductDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/productById/${params.id}`)
       }
 
     ]
