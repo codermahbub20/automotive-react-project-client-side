@@ -45,7 +45,7 @@ const Registration = () => {
                 })
                 const user = {  email,name,photo }
 
-                fetch("http://localhost:5000/user", {
+                fetch("https://car-shop-server-side-bgtjvybrl-mahbub1.vercel.app/user", {
                     method: "POST",
                     headers: {
                         'content-types': 'application/json'

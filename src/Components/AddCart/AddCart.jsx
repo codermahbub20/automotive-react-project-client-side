@@ -13,7 +13,7 @@ const AddCart = () => {
     
 
     useEffect(()=>{
-        fetch('http://localhost:5000/cart')
+        fetch('https://car-shop-server-side-bgtjvybrl-mahbub1.vercel.app/cart')
         .then(res => res.json())
         .then(data => {
             setMycart(data)
@@ -25,7 +25,8 @@ const AddCart = () => {
     return (
         <div className="grid lg:grid-cols-2 md:w-3/4 mx-auto gap-5 md:p-5">
           {
-            myCart.map(cart =><MyCart key={cart._id} myCart={myCart} setMycart={setMycart} cart={cart}></MyCart> )
+            myCart.map(cart =><MyCart key={cart._id} myCart={myCart}
+                 setMycart={setMycart} cart={cart}></MyCart> )
           }
         </div>
     );

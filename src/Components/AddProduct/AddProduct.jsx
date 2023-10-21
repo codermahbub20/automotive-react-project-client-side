@@ -16,7 +16,7 @@ const AddProduct = () => {
         const photo = form.photo.value;
 
         const product = { name, brand, type, price, description, rating, photo }
-        fetch('http://localhost:5000/product', {
+        fetch('https://car-shop-server-side-bgtjvybrl-mahbub1.vercel.app/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

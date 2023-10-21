@@ -1,12 +1,19 @@
+
 import Swal from "sweetalert2";
+
 
 
 const MyCart = ({ cart , myCart,setMycart}) => {
 
+
+
     const {_id, photo, name, brand, price, user } = cart;
+
+
 
     const handleDelete = _id =>{
         console.log(_id)
+
 
         Swal.fire({
             title: 'Are you sure?',
@@ -18,7 +25,7 @@ const MyCart = ({ cart , myCart,setMycart}) => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/cart/${_id}`,{
+                fetch(`https://car-shop-server-side-bgtjvybrl-mahbub1.vercel.app/cart/${_id}`,{
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -40,6 +47,8 @@ const MyCart = ({ cart , myCart,setMycart}) => {
 
     return (
         <div>
+
+            
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure><img className="w-[200px] h-[100px]" src={photo} alt="Movie" /></figure>
                 <div className="card-body ">

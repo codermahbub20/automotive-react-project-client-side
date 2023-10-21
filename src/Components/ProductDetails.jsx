@@ -11,7 +11,7 @@ const ProductDetails = () => {
     console.log(user.email)
     const handleCartAdd = (photo,brand,name,price,user) =>{
         const myData = {photo,brand,name,price,user}
-        fetch(`http://localhost:5000/cart`,{
+        fetch(`https://car-shop-server-side-bgtjvybrl-mahbub1.vercel.app/cart`,{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
