@@ -115,7 +115,7 @@ const UpdateProduct = () => {
                                         <input type="text" placeholder="Enter coffee Photo Url" className="input input-bordered" name='photo' required />
                                     </div>
                                     <div className="form-control md:px-24  w-full">
-                                        <input className='btn mt-3 w-full mx-auto  hover:bg-[#56c5bb] bg-[#56c5bb]' type="submit" value="Update Product" />
+                                        <input className='btn mt-3 w-full mx-auto  hover:bg-[#56c5bb] bg-[#56c5bb]' type="submit" value="Submit Product" />
                                     </div>
                                 </form>
 

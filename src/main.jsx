@@ -16,6 +16,7 @@ import AuthProvider from './Providers/AuthProvider';
 import Details from './Components/details/Details';
 import ErrorPage from './Shared/Footer/ErrorPage/ErrorPage';
 import ProductDetails from './Components/ProductDetails';
+import AddCart from './Components/AddCart/AddCart';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         path: "/productDetails/:id",
         element: <ProductDetails></ProductDetails>,
         loader: ({params}) => fetch(`http://localhost:5000/productById/${params.id}`)
+      },
+      {
+        path: "/addCart",
+        element: <AddCart></AddCart>
       }
 
     ]
